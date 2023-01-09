@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	a, b := 5, 2
-	fmt.Println(a + b)
-	fmt.Println(a - b)
-	fmt.Println(a * b)
-	fmt.Println(a / b)
-	fmt.Println(a % b)
+	const a = 42
 
-	fmt.Println(float32(a) / float32(b))
+	var i int = a
+	var f float64 = a
 
-	fmt.Println(a == b)
-	fmt.Println(a < b)
-	fmt.Println(a > b)
+	fmt.Println(i, f)
+
+	const b float32 = 3
+	var f32 float32 = b
+	var f64 float64 = float64(b)
+
+	fmt.Println(f32, f64)
 }
