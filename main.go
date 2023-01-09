@@ -15,4 +15,8 @@ func main() {
 	var f64 float64 = float64(b)
 
 	fmt.Println(f32, f64)
+
+	const c = iota
+
+	fmt.Println(c)
 }
