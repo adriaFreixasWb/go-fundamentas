@@ -19,4 +19,14 @@ func main() {
 	const c = iota
 
 	fmt.Println(c)
+
+	const (
+		d = 2 * 5
+		e
+		ff = iota
+		g
+		h = 10 * iota
+	)
+
+	fmt.Println(d, e, ff, g, h)
 }
